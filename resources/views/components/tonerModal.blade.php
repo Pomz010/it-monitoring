@@ -1,9 +1,9 @@
-@extends('layout')
+{{-- @extends('layout') --}}
 <!-- TONER MODAL SECTION -->
 
-@section('tonerModal')
+{{-- @section('content') --}}
     {{-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> --}}
-        <div class="modal-dialog modal-dialog-centered">
+        {{-- <div class="modal-dialog modal-dialog-centered"> --}}
         <div class="modal-content mw-25">
             <div class="modal-header py-1">
             <h1 class="modal-title fs-5" id="exampleModalLabel">New Transaction</h1>
@@ -70,7 +70,7 @@
             </form>
             </div>
         </div>
-        </div>
+        {{-- </div> --}}
     {{-- </div> --}}
-@endsection
+{{-- @endsection --}}
 <!-- END OF TONER MODAL -->

@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\EmployeeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +17,5 @@ use App\Http\Controllers\LoginController;
 */
 
 Route::get('/', [LoginController::class, 'homepage']);
+Route::post('/new-user', [UserController::class, 'createUser']);
+Route::post('/create-employee/new-employee', [EmployeeController::class, 'createEmployee']);

@@ -1,6 +1,6 @@
-@extends('layout')
+{{-- @extends('layout') --}}
     <!-- NEW DEPARTMENT MODAL -->
-@section('departmentModal')
+{{-- @section('departmentModal') --}}
     <div class="modal fade" id="newDepartment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content mw-25">
@@ -36,4 +36,4 @@
             </div>
         </div>
     </div><!-- END OF NEW DEPARTMENT MODAL -->
-@endsection
+{{-- @endsection --}}

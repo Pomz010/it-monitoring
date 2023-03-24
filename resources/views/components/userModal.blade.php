@@ -1,6 +1,6 @@
-@extends('layout')
+{{-- @extends('layout') --}}
 <!-- NEW USER MODAL -->
-@section('userModal')
+{{-- @section('userModal') --}}
   <div class="modal fade" id="newUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content mw-25">
@@ -9,10 +9,10 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body py-1">
-                  <form class="mt-3" action="#" method="POST">
-
+                  <form class="mt-3" action="/new-user" method="POST">
+                    @csrf
                     <div class="mb-2 d-flex justify-content-between">
-                      <label for="cartridge">User Type: </label>
+                      <label for="cartridge">Role: </label>
                       <select class="w-50" name="cartridge_type" id="cartridge_type">
                           <option value="1">Admin</option>
                           <option value="2">Agent</option>
@@ -50,4 +50,4 @@
             </div>
           </div>
         </div><!-- END OF NEW USER MODAL -->
-@endsection
+{{-- @endsection --}}

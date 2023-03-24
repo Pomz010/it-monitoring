@@ -27,6 +27,6 @@ class CreateMovementTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('movement_types');
+        Schema::drop('movement_types');
     }
 }

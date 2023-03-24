@@ -27,6 +27,6 @@ class CreateTonerColorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('toner_colors');
+        Schema::drop('toner_colors');
     }
 }

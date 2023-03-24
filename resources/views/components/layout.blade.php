@@ -73,7 +73,7 @@
                   </button>
                 </h2>
                 <ul id="employee" class="accordion-collapse collapse list-group list-group-flush" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="#" data-bs-toggle="modal" data-bs-target="#newEmployee"><i class="bi bi-person-fill-add me-2"></i>New</a></li>
+                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="/create-employee" data-bs-toggle="modal" data-bs-target="#newEmployee"><i class="bi bi-person-fill-add me-2"></i>New</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="#employeeList" class="nav-link" data-bs-toggle="tab"><i class="bi bi-person-vcard-fill me-2"></i>List</a></li>
                 </ul>
               </div>
@@ -110,18 +110,20 @@
 
         </div><!-- END OF MAIN BODY -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          @yield('tonerModal')
+          <div class="modal-dialog modal-dialog-centered">
+          @include('components.tonerModal')
+          </div>
         </div>
 
-        @yield('movementModal')
+        @include('components.movementModal')
 
-        @yield('hardwareModal')
+        @include('components.hardwareModal')
 
-        @yield('departmentModal')
+        @include('components.departmentModal')
 
-        @yield('employeeModal')
+        @include('components.employeeModal')
 
-        @yield('userModal')
+        @include('components.userModal')
 
         
       

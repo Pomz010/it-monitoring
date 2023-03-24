@@ -1,6 +1,6 @@
-@extends('layout')
+{{-- @extends('layout') --}}
 <!-- MOVEMENT MODAL -->
-@section('movementModal')
+{{-- @section('movementModal') --}}
     <div class="modal fade" id="assetMovement" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content mw-25">
@@ -113,4 +113,4 @@
         </div>
         </div>
     </div><!-- END OF MOVEMENT MODAL -->
-@endsection
+{{-- @endsection --}}

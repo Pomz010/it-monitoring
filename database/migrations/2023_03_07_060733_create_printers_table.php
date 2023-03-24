@@ -31,6 +31,6 @@ class CreatePrintersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('printers');
+        Schema::drop('printers');
     }
 }

@@ -21,7 +21,6 @@ class CreateTransactionsTable extends Migration
             $table->integer('cyan');
             $table->integer('magenta');
             $table->integer('yellow');
-            $table->foreignId('employee_id')->references('id')->on('employee_lists');
             $table->foreignId('movement_id')->references('id')->on('movement_types');
             $table->timestamps();
         });
@@ -34,6 +33,6 @@ class CreateTransactionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('transactions');
+        Schema::drop('transactions');
     }
 }
