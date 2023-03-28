@@ -9,21 +9,21 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body py-1">
-                    <form class="mt-3" action="#" method="POST">
-
+                    <form class="mt-3" action="/new-department/create" method="POST">
+                        @csrf
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="black">Department Code: </label>
-                        <input class="w-50" type="text" id="black" name="black_qty">
+                        <label for="department_code">Department Code: </label>
+                        <input class="w-50" type="text" id="department_code" name="department_code">
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="black">Department Name: </label>
-                        <input class="w-50" type="text" id="black" name="black_qty">
+                        <label for="department_name">Department Name: </label>
+                        <input class="w-50" type="text" id="department_name" name="department_name">
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="cyan">Description: </label>
-                        <textarea class="w-50" name="message" rows="1" cols="29" id="Cyan" name="cyan_qty">
+                        <label for="description">Description: </label>
+                        <textarea class="w-50" rows="1" cols="29" id="description" name="description">
                         </textarea>
                     </div>
 

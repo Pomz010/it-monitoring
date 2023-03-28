@@ -14,69 +14,69 @@
                     <div>
                     <h5>Hardware Info</h5>
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Asset Tag: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
+                        <label for="asset_tag">Asset Tag: </label>
+                        <input class="w-50" type="text" id="asset_tag" name="asset_tag">
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="source">Item: </label>
-                        <select class="w-50" name="source" id="source">
-                            <option value="1">Laptop</option>
-                            <option value="2">System Unit</option>
-                            <option value="3">Monitor</option>
-                            <option value="3">Printer</option>
-                            <option value="3">Projector</option>
-                            <option value="3">Smartphone</option>
-                            <option value="3">UPS</option>
+                        <label for="item">Item: </label>
+                        <select class="w-50" name="item" id="item">
+                            <option value="Laptop">Laptop</option>
+                            <option value="System Unit">System Unit</option>
+                            <option value="Monitor">Monitor</option>
+                            <option value="Printer">Printer</option>
+                            <option value="Projector">Projector</option>
+                            <option value="Smartphone">Smartphone</option>
+                            <option value="UPS">UPS</option>
                         </select>
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Brand: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
+                        <label for="brand">Brand: </label>
+                        <input class="w-50" type="text" id="brand" name="brand">
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Model: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
+                        <label for="model">Model: </label>
+                        <input class="w-50" type="text" id="model" name="model">
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Processor: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
+                        <label for="processor">Processor: </label>
+                        <input class="w-50" type="text" id="processor" name="processor">
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Memory: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
+                        <label for="memory">Memory: </label>
+                        <input class="w-50" type="text" id="memory" name="memory">
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Storage: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
+                        <label for="storage">Storage: </label>
+                        <input class="w-50" type="text" id="storage" name="storage">
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Serial #: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
+                        <label for="serial_#">Serial #: </label>
+                        <input class="w-50" type="text" id="serial_#" name="serial_#">
                     </div>
                     </div>
 
                     <div>
                     <h5>Purchase Info</h5>
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Date Purchased: </label>
-                        <input class="w-50" type="date" id="yellow" name="yellow_qty">
+                        <label for="date_purchased">Date Purchased: </label>
+                        <input class="w-50" type="date" id="date_purchased" name="date_purchased">
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Vendor: </label>
-                        <input class="w-50" type="Text" id="yellow" name="yellow_qty">
+                        <label for="vendor">Vendor: </label>
+                        <input class="w-50" type="Text" id="vendor" name="vendor">
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Warranty(Mos.): </label>
-                        <input class="w-50" type="number" id="yellow" name="yellow_qty">
+                        <label for="warranty">Warranty(Mos.): </label>
+                        <input class="w-50" type="number" id="warranty" name="warranty">
                     </div>
                     </div>
 

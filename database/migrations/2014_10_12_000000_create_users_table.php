@@ -27,7 +27,9 @@ class CreateUsersTable extends Migration
         DB::table('users')->insert(
             array(
                 'name' => 'admin',
-                'password' => 'admin'
+                'password' => 'admin',
+                'created_at' => now(),
+                'updated_at' => now()
             )
         );
     }

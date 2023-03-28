@@ -9,7 +9,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body py-1">
-                <form class="mt-3" action="/create-employee/new-employee" method="POST">
+                <form class="mt-3" action="/new-employee/create" method="POST">
                     @csrf
                 <div class="mb-2 d-flex justify-content-between">
                     <label for="employee_id">Employee ID: </label>
@@ -17,8 +17,8 @@
                 </div>
 
                 <div class="mb-2 d-flex justify-content-between">
-                    <label for="dept_id">Department ID: </label>
-                    <input class="w-50" type="number" id="dept_id" name="dept_id">
+                    <label for="department_id">Department ID: </label>
+                    <input class="w-50" type="number" id="department_id" name="department_id">
                 </div>
 
                 <div class="mb-2 d-flex justify-content-between">
@@ -37,8 +37,8 @@
                 </div>
 
                 <div class="mb-2 d-flex justify-content-between">
-                    <label for="name_ext">Extension Name: </label>
-                    <input class="w-50" type="text" id="name_ext" name="name_ext">
+                    <label for="ext_name">Extension Name: </label>
+                    <input class="w-50" type="text" id="ext_name" name="ext_name">
                 </div>
 
                 <div class="mb-2 d-flex justify-content-between">

@@ -11,19 +11,22 @@ class EmployeeController extends Controller
     public function createEmployee(Request $request) {
         $data = $request->validate([
             'employee_id' => 'required',
-            'dept_id' => 'required',
+            'department_id' => 'required',
             'firstname' => 'required',
             'lastname' => 'required',
             'middle_name' => 'required',
-            'name_ext' => 'nullable',
+            'ext_name' => 'nullable',
             'gender' => 'required',
             'position' => 'required',
             'role' => 'required',
             'email' => 'required'
         ]);
+
+        // If validation fails, redirect back to the previous route with errors
+        
     
         Employee::create($data);
     
-        // return $data;
+        return '<h1>Success</h1>';
     }
 }

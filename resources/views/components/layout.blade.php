@@ -49,8 +49,8 @@
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="#hardware" class="nav-link" data-bs-toggle="tab"><i class="bi bi-motherboard-fill me-2"></i>Hardware</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="#software" class="nav-link" data-bs-toggle="tab"><i class="bi bi-window-stack me-2"></i>Software</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6"><i class="bi bi-wrench-adjustable-circle-fill me-2"></i>Service Support</li>
-                  <li class="accordion-body list-group-item ps-4 fs-6"><i class="bi bi-shop me-2"></i>Vendor</li>
-                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="#home-tab" class="nav-link" data-bs-toggle="tab"><i class="bi bi-droplet-fill"></i>Toner</a></li>
+                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="/new-vendor" data-bs-toggle="tab" data-bs-target="#vendor"><i class="bi bi-shop me-2"></i>Vendor</li>
+                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="#tonerBalance" class="nav-link" data-bs-toggle="tab"><i class="bi bi-droplet-fill"></i>Toner</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6"><i class="bi bi-box-seam-fill me-2"></i>Others</li>
                 </ul>
               </div>
@@ -62,7 +62,7 @@
                   </button>
                 </h2>
                 <ul id="flush-collapseThree" class="accordion-collapse collapse list-group list-group-flush" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="#" data-bs-toggle="modal" data-bs-target="#newDepartment"><i class="bi bi-plus-circle-fill me-2"></i>New</a></li>
+                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="/new-department" data-bs-toggle="modal" data-bs-target="#newDepartment"><i class="bi bi-plus-circle-fill me-2"></i>New</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6 nav-item"><a href="#departmentList" class="nav-link" data-bs-toggle="tab"><i class="bi bi-list-columns-reverse me-2"></i>List</a></li>
                 </ul>
               </div>
@@ -92,8 +92,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
                   <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="tab" data-bs-target="#transactionHistory" aria-expanded="false" aria-controls="flush-collapseThree">
-                    
-                    <a href="#reports" class="nav-link" data-bs-toggle="tab"><i class="bi bi-bar-chart-line-fill me-2"></i>Reports</a>
+                    <a href="#transactionHistory" class="nav-link" data-bs-toggle="tab"><i class="bi bi-bar-chart-line-fill me-2"></i>Reports</a>
                   </button>
                 </h2>
               </div>
@@ -111,19 +110,21 @@
         </div><!-- END OF MAIN BODY -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
-          @include('components.tonerModal')
+          @include('modal.tonerModal')
           </div>
         </div>
 
-        @include('components.movementModal')
+        @include('modal.movementModal')
 
-        @include('components.hardwareModal')
+        @include('modal.hardwareModal')
 
-        @include('components.departmentModal')
+        @include('modal.vendorModal')
 
-        @include('components.employeeModal')
+        @include('modal.departmentModal')
 
-        @include('components.userModal')
+        @include('modal.employeeModal')
+
+        @include('modal.userModal')
 
         
       

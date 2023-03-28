@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMovementTypesTable extends Migration
+class CreateDepartmentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateMovementTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('movement_types', function (Blueprint $table) {
+        Schema::create('departments', function (Blueprint $table) {
             $table->id();
-            $table->string('movement_type');
+            $table->string('department_code')->unique();
+            $table->string('department_name');
+            $table->string('description');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateMovementTypesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('movement_types');
+        Schema::dropIfExists('departments');
     }
 }
