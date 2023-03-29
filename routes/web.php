@@ -18,7 +18,10 @@ use App\Http\Controllers\DepartmentController;
 |
 */
 
-Route::get('/', [LoginController::class, 'homepage']);
+Route::get('/', [LoginController::class, 'index'])->name('components.login');
+Route::post('/homepage', [UserController::class, 'showHomepage'])->name('homepage');
+
+
 Route::post('/new-user', [UserController::class, 'createUser']);
 Route::post('/new-employee/create', [EmployeeController::class, 'createEmployee']);
 Route::post('/new-department/create', [DepartmentController::class, 'createDepartment']);
