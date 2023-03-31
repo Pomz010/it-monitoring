@@ -11,7 +11,7 @@
 </head>
 <body class="bg-body-secondary"> -->
 <x-layout>
-    <div class="container ">
+    <div class="container">
             <div class="form_login container w-auto position-absolute top-50 start-50 translate-middle">
                     <div class="login-form__container">
                         <div class="text-center mb-5">

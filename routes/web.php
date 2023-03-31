@@ -18,8 +18,12 @@ use App\Http\Controllers\DepartmentController;
 |
 */
 
-Route::get('/', [LoginController::class, 'index'])->name('components.login');
-Route::post('/homepage', [UserController::class, 'showHomepage'])->name('homepage');
+// Route::get('/', [LoginController::class, 'index'])->name('components.login');
+Route::get('/', [UserController::class, 'index'])->name('index');
+Route::post('/homepage', [UserController::class, 'showHomepage']);
+// Route::post('/signout', [UserController::class, 'signout'])->name('signout');
+Route::match(['post'], '/signout', [UserController::class, 'signout'])->name('signout');
+
 
 
 Route::post('/new-user', [UserController::class, 'createUser']);

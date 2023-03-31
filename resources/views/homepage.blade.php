@@ -12,7 +12,12 @@
               <li><a class="dropdown-item" href="#">Profile</a></li>
               <li><a class="dropdown-item" href="#">Update credentials</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Signout</a></li>
+              <li>
+                <form method="POST" action="/signout">
+                  @csrf
+                  <button type="submit" class="dropdown-item">Signout</button>
+                </form>
+              </li>
             </ul>
           </div>
         </div>
