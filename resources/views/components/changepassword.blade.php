@@ -13,7 +13,7 @@
       <!-- HEADER NAV -->
       <nav class="navbar bg-dark py-0">
         <div class="container-fluid">
-          <a class="navbar-brand"><img src="../../../public/img/navlogo.png" alt="Company logo" width="100" height="45"></a>
+          <a class="navbar-brand"><img src="../img/navlogo.png" alt="Company logo" width="100" height="45"></a>
           
           <div class="dropstart">
             <a class="btn btn-secondary dropdown-toggle fs-5 py-1" data-bs-toggle="dropdown" aria-expanded="false">

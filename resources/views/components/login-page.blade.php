@@ -20,7 +20,7 @@
                         </div>
                         
                             <div class="w-100">
-                                <form action="/homepage" method="POST">
+                                <form action="{{ route('homepage') }}" method="POST">
                                     @csrf
                                     <div class="mb-3">
                                         <label for="username" class="form-label">Username</label>
