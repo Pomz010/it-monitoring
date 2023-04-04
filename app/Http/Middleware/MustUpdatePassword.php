@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -17,12 +18,21 @@ class MustUpdatePassword
      */
     public function handle(Request $request, Closure $next)
     {
-        if (auth()->check()) {
+        if(!auth()->check()){
+            return redirect('/login');
+        } else {
             $user = auth()->user();
-            if ($user->updated_at === null) {
-                return redirect()->route('updatePassword');
+            // $user = User::find($current->id);
+            // $updated = $user->updated_at;
+            // $updatedAt = User::where('id', $user)->pluck('updated_at')->first();
+
+            if (!$user->updated_at == null) {
+                $request->session()->regenerate();
+                return $next($request);
+            } else {
+                return redirect('/update-password');
             }
+            // return dd($updatedAt);
         }
-        return $next($request);
     }
 }

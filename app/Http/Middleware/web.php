@@ -18,15 +18,15 @@ use App\Http\Controllers\DepartmentController;
 |
 */
 
-Route::get('/login', [UserController::class, 'login']);
-Route::get('/', [UserController::class, 'login'])->name('login')->middleware('mustUpdatePassword');
+// Route::get('/', [LoginController::class, 'index'])->name('components.login');
+Route::get('/', [UserController::class, 'login'])->name('login')->middleware(['guest']);
 Route::post('/', [UserController::class, 'login'])->name('login')->middleware(['guest']);
-Route::post('/homepage', [UserController::class, 'showHomepage'])->name('homepage')->middleware(['mustLogIn', 'mustUpdatePassword']);
+Route::post('/homepage', [UserController::class, 'showHomepage'])->name('homepage');
 Route::get('/homepage', [UserController::class, 'showHomepage'])->middleware(['guest', 'mustUpdatePassword']);
 Route::post('/signout', [UserController::class, 'signout'])->name('signout')->middleware('auth');
 Route::get('/signout', [UserController::class, 'signout'])->middleware('guest');
-Route::get('/update-password', [UserController::class, 'updatePassword'])->name('updatePassword')->middleware('auth');
-Route::post('/create-password', [UserController::class, 'createPassword'])->name('createPassword')->middleware('auth');
+Route::get('/password/update', [UserController::class, 'updatePassword'])->name('updatePasword')->middleware('auth');
+
 
 Route::post('/new-user', [UserController::class, 'createUser']);
 Route::post('/new-employee/create', [EmployeeController::class, 'createEmployee']);

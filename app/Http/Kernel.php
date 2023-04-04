@@ -54,6 +54,7 @@ class Kernel extends HttpKernel
      * @var array<string, class-string|string>
      */
     protected $routeMiddleware = [
+        'mustLogIn' => \App\Http\Middleware\MustLogIn::class,
         'mustUpdatePassword' => \App\Http\Middleware\MustUpdatePassword::class,
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
