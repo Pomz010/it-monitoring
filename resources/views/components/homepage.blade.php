@@ -1,5 +1,5 @@
 <x-layout>
-
+@include('components._header-nav')
 
       <!-- START BODY CONTAINER -->
       <div class="container-fluid gx-0">

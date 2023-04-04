@@ -1,5 +1,6 @@
 
 <x-layout>
+  @include('components._header-nav')
       <!-- START BODY CONTAINER -->
       <div class="container-fluid gx-0">
         <div class="container w-auto position-absolute top-50 start-50 translate-middle">

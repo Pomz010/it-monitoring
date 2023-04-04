@@ -22,17 +22,12 @@ class MustUpdatePassword
             return redirect('/login');
         } else {
             $user = auth()->user();
-            // $user = User::find($current->id);
-            // $updated = $user->updated_at;
-            // $updatedAt = User::where('id', $user)->pluck('updated_at')->first();
-
             if (!$user->updated_at == null) {
                 $request->session()->regenerate();
                 return $next($request);
             } else {
                 return redirect('/update-password');
             }
-            // return dd($updatedAt);
         }
     }
 }

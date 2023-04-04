@@ -16,7 +16,7 @@ class UserController extends Controller
             return view('components.login-page');
         }
 
-        return view('homepage');
+        return view('components.homepage');
     }
 
     public function logout() {
@@ -25,20 +25,8 @@ class UserController extends Controller
 
     public function showHomepage() {
         if(auth()->check()){
-            return view('homepage');
+            return view('components.homepage');
         } 
-        
-        // $data = $request->validate([
-        //     'username' => ['required'],
-        //     'password' => ['required']
-        // ]);
-
-        // if(auth()->attempt(['name' => $data['username'], 'password' => $data['password']])) {
-        //     $request->session()->regenerate();
-        //     return view('homepage');
-        // } else {
-        //     return redirect('/');
-        // }
     }
 
     public function updatePassword() {
@@ -57,15 +45,9 @@ class UserController extends Controller
         $data = $request->validate([
             'password' => ['required', 'min:8', 'confirmed', Rule::unique('users', 'password')]
         ]);
-
-        // If validation fails, redirect back to the previous route with errors
         
     
         if(auth()->check()){
-            // $user = Auth::user();
-            // $user->password = Hash::make($data['password']);
-            // $user->save();
-
 
             Auth::user()->update([
                 'password' => Hash::make($data['password'])
@@ -74,9 +56,6 @@ class UserController extends Controller
             $request->session()->regenerate();
             return redirect('/');
         }
-
-        
-        
     }
 
     // public function createUser() {
