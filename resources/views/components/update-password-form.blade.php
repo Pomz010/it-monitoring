@@ -4,12 +4,13 @@
       <!-- START BODY CONTAINER -->
       <div class="container-fluid gx-0">
         <div class="container w-auto position-absolute top-50 start-50 translate-middle">
-            <h1>Change default password</h1>
+            <h1>Create new password</h1>
             <p>Your new password must be different from your previous passwords.</p>
-            <form action="{{ route('createPassword') }}" method="POST">
+            <form action="/update-password" method="POST">
+              @method('PUT')
               @csrf
                 <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
+                    <label for="password" class="form-label">New Password</label>
                     <input type="password" class="form-control rounded-pill"  id="password" name="password">
                     <p>Must be atleast 8 characters.</p>
                 </div>

@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MustLogIn
 {
@@ -16,16 +17,20 @@ class MustLogIn
      */
     public function handle(Request $request, Closure $next)
     {
-
         $data = $request->validate([
-            'username' => ['required'],
-            'password' => ['required']
+            'username' => 'required',
+            'password' => 'required'
         ]);
 
-        if(auth()->attempt(['name' => $data['username'], 'password' => $data['password']])) {
+        if (Auth::attempt(['name' => $data['username'], 'password' => $data['password']])) {
+            // Authentication was successful...
+            // return dd($data);
+            $request->session()->regenerate();
             return $next($request);
         }
 
-        return redirect('/login');
+        // return dd($data);
+        // return redirect('/');
+        return back();
     }
 }

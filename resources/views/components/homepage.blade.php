@@ -75,18 +75,7 @@
           <!-- MAIN SECTION -->
           <div class="px-1 col">
             <!-- TONER MONITORING TABS -->
-  <div class="tab-content">
-    {{-- <div id="reports" class="container tab-pane fade">
-      <ul class="nav nav-tabs" id="tonerTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#tonerBalance" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Remaining Balance</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#transactionHistory" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Transaction History</button>
-        </li>
-      </ul>
-    </div> --}}
-    
+  <div class="tab-content">    
 
     <div id="transactionHistory" class="container-fluid fade tab-pane"><br>
       <table class="table caption-top container-xl">

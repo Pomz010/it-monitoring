@@ -1,15 +1,30 @@
 
 <x-layout>
     <div class="container">
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
             <div class="form_login container w-auto position-absolute top-50 start-50 translate-middle">
+                    
+                    
+            
                     <div class="login-form__container">
+
+                    
+
                         <div class="text-center mb-5">
                             <img class="rounded-circle mb-1" src="../img/logo.png" alt="Agripacific logo" width="120" height="120">
                             <p class="h1 fs-4">IT Asset Monitoring</p>
                         </div>
                         
                             <div class="w-100">
-                                <form action="{{ route('homepage') }}" method="POST">
+                                <form action="{{ route('login') }}" method="POST">
                                     @csrf
                                     <div class="mb-3">
                                         <label for="username" class="form-label">Username</label>

@@ -18,16 +18,16 @@ class MustUpdatePassword
      */
     public function handle(Request $request, Closure $next)
     {
-        if(!auth()->check()){
-            return redirect('/login');
-        } else {
+        if(auth()->check()){
             $user = auth()->user();
             if (!$user->updated_at == null) {
                 $request->session()->regenerate();
                 return $next($request);
-            } else {
-                return redirect('/update-password');
             }
+
+            return redirect('/create-password');
         }
+
+        return view('components.login-page');
     }
 }

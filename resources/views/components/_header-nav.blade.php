@@ -12,7 +12,7 @@
           <li><a class="dropdown-item" href="#">Update credentials</a></li>
           <li><hr class="dropdown-divider"></li>
           <li>
-            <form method="POST" action="{{ route('signout')}}">
+            <form method="POST" action="{{ route('signout') }}">
               @csrf
               <button type="submit" class="dropdown-item">Signout</button>
             </form>
