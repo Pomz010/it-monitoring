@@ -23,3 +23,7 @@ Route::post('/', [UserController::class, 'show'])->name('login')->middleware(['m
 Route::match(['get', 'post'],'/signout', [UserController::class, 'destroy'])->name('signout');
 Route::get('/create-password', [UserController::class, 'create'])->middleware(['auth']);
 Route::match(['get', 'put', 'post'], '/update-password', [UserController::class, 'update'])->name('updatePassword')->middleware('auth');
+
+// Add new user routes
+Route::post('/create-employee', [EmployeeController::class, 'store']);
+

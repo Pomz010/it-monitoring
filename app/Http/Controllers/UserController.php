@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Employee;
+use App\Models\Hardware;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\DB;
@@ -34,9 +36,16 @@ class UserController extends Controller
         return view('components.update-password-form');
     }
 
-    public function show() {
+    public function show(Request $request) {
         if(auth()->check() && !auth()->user()->updated_at == null){
-            return view('components.homepage');
+            $employee = new Employee;
+            $user = new User;
+            $hardware = new Hardware;
+            $hardwares = $hardware->getAllHardware();
+            $users = $user->getAllUsers();
+            $employees = $employee->getAllEmployees();
+
+            return view('components.homepage', compact('employees', 'users', 'hardwares'));
         }
 
         auth()->logout();

@@ -9,7 +9,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body py-1">
-                <form class="mt-3" action="/new-employee/create" method="POST">
+                <form class="mt-3" action="/create-employee" method="POST">
                     @csrf
                 <div class="mb-2 d-flex justify-content-between">
                     <label for="employee_id">Employee ID: </label>

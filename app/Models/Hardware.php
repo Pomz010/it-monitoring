@@ -2,11 +2,10 @@
 
 namespace App\Models;
 
-
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-class Employee extends Model
+class Hardware extends Model
 {
     use HasFactory;
 
@@ -23,8 +22,7 @@ class Employee extends Model
         'email'
     ];
 
-    public function getAllEmployees(){
-        return Employee::all();
+    public function getAllHardware(){
+        return Hardware::all();
     }
-
 }

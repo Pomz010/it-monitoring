@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
-    public function createEmployee(Request $request) {
+    public function store(Request $request) {
         $data = $request->validate([
             'employee_id' => 'required',
             'department_id' => 'required',
@@ -27,6 +27,6 @@ class EmployeeController extends Controller
     
         Employee::create($data);
     
-        return '<h1>Success</h1>';
+        return back();
     }
 }
