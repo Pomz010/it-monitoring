@@ -10,16 +10,16 @@ class Hardware extends Model
     use HasFactory;
 
     protected $fillable = [
-        'employee_id',
-        'department_id',
-        'firstname',
-        'lastname',
-        'middle_name',
-        'ext_name',
-        'gender',
-        'position',
-        'role',
-        'email'
+        'asset_tag',
+        'item',
+        'brand',
+        'model',
+        'processor',
+        'memory',
+        'storage',
+        'serial_#',
+        'vendor',
+        'warranty'
     ];
 
     public function getAllHardware(){

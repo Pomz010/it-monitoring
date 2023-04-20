@@ -10,7 +10,7 @@
             </div>
             <div class="modal-body py-1">
                 <form action="#" method="POST">
-
+                    @csrf
                     <div>
                     <h5>Hardware Info</h5>
                     <div class="mb-2 d-flex justify-content-between">

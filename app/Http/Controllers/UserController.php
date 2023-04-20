@@ -40,12 +40,12 @@ class UserController extends Controller
         if(auth()->check() && !auth()->user()->updated_at == null){
             $employee = new Employee;
             $user = new User;
-            $hardware = new Hardware;
-            $hardwares = $hardware->getAllHardware();
+            // $hardware = new Hardware;
+            // $hardwares = $hardware->getAllHardware();
             $users = $user->getAllUsers();
             $employees = $employee->getAllEmployees();
 
-            return view('components.homepage', compact('employees', 'users', 'hardwares'));
+            return view('components.homepage', compact('employees', 'users'));
         }
 
         auth()->logout();
