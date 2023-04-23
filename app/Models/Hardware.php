@@ -18,6 +18,7 @@ class Hardware extends Model
         'memory',
         'storage',
         'serial_#',
+        'purchase_date',
         'vendor',
         'warranty'
     ];

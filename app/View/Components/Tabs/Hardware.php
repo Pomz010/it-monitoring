@@ -6,15 +6,17 @@ use Illuminate\View\Component;
 
 class Hardware extends Component
 {
-    public $hardware;
+    public $hardwares;
+    public $hardwareCategories;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($hardware)
+    public function __construct($hardwares, $hardwareCategories)
     {
-        $this->hardware = $hardware;
+        $this->hardwares = $hardwares;
+        $this->hardwareCategories = $hardwareCategories;
     }
 
     /**

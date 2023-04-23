@@ -10,24 +10,14 @@
         </tr>
       </thead>
       <tbody>
+        @foreach($departments as $department)
         <tr>
-          <td>1</td>
-          <td>03/14/2023</td>
-          <td>489283</td>
-          <td>CF400A</td>
+          <td>{{ $department->id}}</td>
+          <td>{{ $department->department_code }}</td>
+          <td>{{ $department->department_name }}</td>
+          <td>{{ $department->description }}</td>
         </tr>
-        <tr>
-          <td>2</td>
-          <td>03/14/2023</td>
-          <td>489286</td>
-          <td>CF400A</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>03/14/2023</td>
-          <td>489289</td>
-          <td>CF500A</td>
-        </tr>
+        @endforeach
       </tbody>
     </table>
-  </div>
+</div>

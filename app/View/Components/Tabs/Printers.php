@@ -4,17 +4,16 @@ namespace App\View\Components\Tabs;
 
 use Illuminate\View\Component;
 
-class Departments extends Component
+class Printers extends Component
 {
-    public $departments;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($departments)
+    public function __construct()
     {
-        $this->departments = $departments;
+        //
     }
 
     /**
@@ -24,6 +23,6 @@ class Departments extends Component
      */
     public function render()
     {
-        return view('components.tabs.departments');
+        return view('components.tabs.printers');
     }
 }

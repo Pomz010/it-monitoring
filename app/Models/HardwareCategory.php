@@ -5,17 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Department extends Model
+class HardwareCategory extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'department_code',
-        'department_name',
-        'description'
+        'category'
     ];
 
-    public function getAllDepartments(){
-        return Department::all();
+    public function getAllCategory(){
+        return HardwareCategory::all();
     }
 }

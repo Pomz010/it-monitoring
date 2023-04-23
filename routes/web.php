@@ -5,7 +5,10 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\VendorController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\HardwareController;
+use App\Http\Controllers\SoftwareController;
 use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\HardwareCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +29,19 @@ Route::match(['get', 'put', 'post'], '/update-password', [UserController::class,
 
 // Add new user routes
 Route::post('/create-employee', [EmployeeController::class, 'store']);
+
+// Add new hardware routes
+Route::post('/create-hardware', [HardwareController::class, 'store']);
+
+// Add new department routes
+Route::post('/create-department', [DepartmentController::class, 'store']);
+
+// Add new software routes
+Route::post('/create-software', [SoftwareController::class, 'store']);
+
+// Add new software routes
+Route::post('/create-toner', [TonerController::class, 'store']);
+
+// Add new hardware category routes
+Route::post('/create-hardware-category', [HardwareCategoryController::class, 'store']);
 

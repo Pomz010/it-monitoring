@@ -6,15 +6,15 @@ use Illuminate\View\Component;
 
 class Software extends Component
 {
-    public $software;
+    public $softwares;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($software)
+    public function __construct($softwares)
     {
-        $this->software = $software;
+        $this->softwares = $softwares;
     }
 
     /**

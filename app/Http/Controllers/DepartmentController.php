@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class DepartmentController extends Controller
 {
-    public function createDepartment(Request $request) {
+    public function store(Request $request) {
         $data = $request->validate([
             'department_code' => 'required',
             'department_name' => 'required',
@@ -16,6 +16,6 @@ class DepartmentController extends Controller
 
         Department::create($data);
 
-        return '<h1>Success</h1>';
+        return back();
     }
 }

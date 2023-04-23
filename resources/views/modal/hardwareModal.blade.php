@@ -1,15 +1,13 @@
-{{-- @extends('layout') --}}
-<!-- NEW HARDWARE MODAL -->
-{{-- @section('hardwareModal') --}}
+
     <div class="modal fade" data-bs-backdrop="static" id="newHardware" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header py-1">
             <h1 class="modal-title fs-5" id="exampleModalLabel">New Hardware</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body py-1">
-                <form action="#" method="POST">
+                <form action="/create-hardware" method="POST">
                     @csrf
                     <div>
                     <h5>Hardware Info</h5>
@@ -65,8 +63,8 @@
                     <div>
                     <h5>Purchase Info</h5>
                     <div class="mb-2 d-flex justify-content-between">
-                        <label for="date_purchased">Date Purchased: </label>
-                        <input class="w-50" type="date" id="date_purchased" name="date_purchased">
+                        <label for="purchase_date">Date Purchased: </label>
+                        <input class="w-50" type="date" id="purchase_date" name="purchase_date">
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
@@ -88,5 +86,4 @@
             </div>
         </div>
         </div>
-    </div><!-- END OF NEW HARDWARE MODAL -->
-{{-- @endsection --}}
+    </div>

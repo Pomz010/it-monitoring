@@ -1,4 +1,6 @@
+
 <div id="software" class="container-fluid tab-pane fade"><br>
+<button type="button" class="btn btn-primary py-1" data-bs-toggle="modal" data-bs-target="#newSoftware">New</button>
     <table class="table caption-top container-xl">
       <caption>Software Assets</caption>
       <thead class="table-success">
@@ -17,45 +19,21 @@
         </tr>
       </thead>
       <tbody>
+        @foreach($softwares as $software)
         <tr>
-          <td>1</td>
-          <td>Microsoft Office 2019</td>
-          <td>Microsoft Office</td>
-          <td>2019 v.2.5</td>
-          <td>Oct. 9, 2021</td>
-          <td>Professional</td>
-          <td>Never</td>
+          <td>{{ $software->id }}</td>
+          <td>{{ $software->name }}</td>
+          <td>{{ $software->description }}</td>
+          <td>{{ $software->version }}</td>
+          <td>{{ $software->purchase_date }}</td>
+          <td>{{ $software->license }}</td>
+          <td>{{ $software->exp_date }}</td>
           <td>Rolly Castillo</td>
           <td>IT Specialist</td>
           <td>Parsolingan</td>
           <td><a href="./pages/software-info" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="View complete software info.">APC-00603</a></td>
         </tr>
-        <tr>
-          <td>2</td>
-          <td>Microsoft Office 2019</td>
-          <td>Microsoft Office</td>
-          <td>2019 v.2.5</td>
-          <td>Oct. 9, 2021</td>
-          <td>Professional</td>
-          <td>Never</td>
-          <td>Marvin De Leon</td>
-          <td>Engineer</td>
-          <td>Parsolingan</td>
-          <td><a href="./pages/software-info" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="View complete software info.">APC-00420</a></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Microsoft Office 2019</td>
-          <td>Microsoft Office</td>
-          <td>2019 v.2.5</td>
-          <td>Oct. 9, 2021</td>
-          <td>Professional</td>
-          <td>Never</td>
-          <td>Nelly Rose Celi</td>
-          <td>Finance Specialist</td>
-          <td>Parsolingan</td>
-          <td><a href="./pages/softwareinfo" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="View complete software info.">APC-00505</a></td>
-        </tr>
+        @endforeach
       </tbody>
     </table>
   </div>
