@@ -3,30 +3,17 @@
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header py-1">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">New Hardware</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">New Laptop</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body py-1">
                 <form action="/create-hardware" method="POST">
                     @csrf
                     <div>
-                    <h5>Hardware Info</h5>
+                    <h5>Laptop Info</h5>
                     <div class="mb-2 d-flex justify-content-between">
                         <label for="asset_tag">Asset Tag: </label>
                         <input class="w-50" type="text" id="asset_tag" name="asset_tag">
-                    </div>
-
-                    <div class="mb-2 d-flex justify-content-between">
-                        <label for="item">Item: </label>
-                        <select class="w-50" name="item" id="item">
-                            <option value="Laptop">Laptop</option>
-                            <option value="System Unit">System Unit</option>
-                            <option value="Monitor">Monitor</option>
-                            <option value="Printer">Printer</option>
-                            <option value="Projector">Projector</option>
-                            <option value="Smartphone">Smartphone</option>
-                            <option value="UPS">UPS</option>
-                        </select>
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">
@@ -69,7 +56,12 @@
 
                     <div class="mb-2 d-flex justify-content-between">
                         <label for="vendor">Vendor: </label>
-                        <input class="w-50" type="Text" id="vendor" name="vendor">
+                        <select class="w-50" name="vendor" id="vendor">
+                            <option value="Cimetrix">Cimetrix</option>
+                            <option value="Computer Zone">Computer Zone</option>
+                            <option value="Benerson">Benerson</option>
+                            <option value="AceCom">AceCom</option>
+                        </select>
                     </div>
 
                     <div class="mb-2 d-flex justify-content-between">

@@ -29,46 +29,49 @@
               </div>
 
               <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                     <i class="bi bi-building-fill-add me-2"></i>Department
                   </button>
                 </h2>
-                <ul id="flush-collapseThree" class="accordion-collapse collapse list-group list-group-flush" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <ul id="flush-collapseTwo" class="accordion-collapse collapse list-group list-group-flush" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="/new-department" data-bs-toggle="modal" data-bs-target="#newDepartment"><i class="bi bi-plus-circle-fill me-2"></i>New</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6 nav-item"><a href="#departmentList" class="nav-link" data-bs-toggle="tab"><i class="bi bi-list-columns-reverse me-2"></i>List</a></li>
                 </ul>
               </div>
+
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#employee" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                     <i class="bi bi-person-badge-fill me-2"></i>Employee List
                   </button>
                 </h2>
-                <ul id="employee" class="accordion-collapse collapse list-group list-group-flush" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <ul id="flush-collapseThree" class="accordion-collapse collapse list-group list-group-flush" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="/create-employee" data-bs-toggle="modal" data-bs-target="#newEmployee"><i class="bi bi-person-fill-add me-2"></i>New</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="#employeeList" class="nav-link" data-bs-toggle="tab"><i class="bi bi-person-vcard-fill me-2"></i>List</a></li>
                 </ul>
               </div>
+
               <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#users" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                     <i class="bi bi-person-workspace me-2"></i>Users
                   </button>
                 </h2>
-                <ul id="users" class="accordion-collapse collapse list-group list-group-flush" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <ul id="flush-collapseFour" class="accordion-collapse collapse list-group list-group-flush" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="#" data-bs-toggle="modal" data-bs-target="#newUser"><i class="bi bi-person-check-fill me-2"></i>New</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="#userList" class="nav-link" data-bs-toggle="tab"><i class="bi bi-person-lines-fill me-2"></i>List</a></li>
                 </ul>
               </div>
 
               <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="tab" data-bs-target="#transactionHistory" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="tab" data-bs-target="#transactionHistory" aria-expanded="false" aria-controls="flush-collapseFive">
                     <a href="#transactionHistory" class="nav-link" data-bs-toggle="tab"><i class="bi bi-bar-chart-line-fill me-2"></i>Reports</a>
                   </button>
                 </h2>
               </div>
+              
             </div>
           </nav><!-- END OF SIDE NAV -->
           

@@ -1,13 +1,18 @@
+@php
+// Will remove spaces between words to use as html id attribute
+    $string = lcfirst($hardwareCategories->category);
+    $target = preg_replace('/\s+/', '', $string);
+@endphp
 
 <button {{ 
     $attributes->merge([
-        'class' => "nav-link",
-        'id' => "pills-" . lcfirst($hardwareCategories->category) . "-tab",
+        'class' => 'nav-link mx-1',
+        'id' => "pills-" . $target . "-tab",
         'data-bs-toggle' => "tab",
-        'data-bs-target' => "#pills-" . lcfirst($hardwareCategories->category),
+        'data-bs-target' => "#" . $target . "List",
         'type' => "button",
         'role' => "tab",
-        'aria-controls' => "pills-" . lcfirst($hardwareCategories->category),
+        'aria-controls' => "pills-" . $target,
         'aria-selected' => "false"
     ])
 }}>{{ $hardwareCategories->category }}</button>
