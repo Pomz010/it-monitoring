@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Toner;
 use Illuminate\Http\Request;
 
 class TonerController extends Controller

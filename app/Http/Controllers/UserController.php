@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Toner;
 use App\Models\Employee;
 use App\Models\Hardware;
 use App\Models\Software;
@@ -47,7 +48,9 @@ class UserController extends Controller
             $department = new Department;
             $software = new Software;
             $hardwareCategory = new HardwareCategory;
+            $toner = new Toner;
 
+            $tonerBalance = $toner->getAllToner();
             $hardwareCategories = $hardwareCategory->getAllCategory();
             $softwares = $software->getAllSoftware();
             $departments = $department->getAllDepartments();
@@ -57,7 +60,7 @@ class UserController extends Controller
 
             return view(
                     'components.homepage', 
-                        compact('employees', 'users', 'hardwares', 'departments', 'softwares', 'hardwareCategories')
+                        compact('employees', 'users', 'hardwares', 'departments', 'softwares', 'hardwareCategories', 'tonerBalance')
             );
         }
 

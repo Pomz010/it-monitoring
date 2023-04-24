@@ -89,6 +89,8 @@
               <x-tabs.software :softwares="$softwares"/>
 
               <x-tabs.departments :departments="$departments"/>
+
+              <x-tabs.toner-balance :tonerBalance="$tonerBalance"/>
             </div> <!-- END OF TONER MONITORING TABS -->
           </div><!-- END OF MAIN SECTION-->          
 
