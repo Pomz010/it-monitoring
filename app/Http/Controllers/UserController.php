@@ -47,11 +47,9 @@ class UserController extends Controller
             $hardware = new Hardware;
             $department = new Department;
             $software = new Software;
-            $hardwareCategory = new HardwareCategory;
             $toner = new Toner;
 
             $tonerBalance = $toner->getAllToner();
-            $hardwareCategories = $hardwareCategory->getAllCategory();
             $softwares = $software->getAllSoftware();
             $departments = $department->getAllDepartments();
             $hardwares = $hardware->getAllHardware();
@@ -60,7 +58,7 @@ class UserController extends Controller
 
             return view(
                     'components.homepage', 
-                        compact('employees', 'users', 'hardwares', 'departments', 'softwares', 'hardwareCategories', 'tonerBalance')
+                        compact('employees', 'users', 'hardwares', 'departments', 'softwares', 'tonerBalance')
             );
         }
 

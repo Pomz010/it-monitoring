@@ -23,7 +23,7 @@
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="#software" class="nav-link" data-bs-toggle="tab"><i class="bi bi-window-stack me-2"></i>Software</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6"><i class="bi bi-wrench-adjustable-circle-fill me-2"></i>Service Support</li>
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="/new-vendor" data-bs-toggle="tab" data-bs-target="#vendor"><i class="bi bi-shop me-2"></i>Vendor</li>
-                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="#tonerBalance" class="nav-link" data-bs-toggle="tab"><i class="bi bi-droplet-fill"></i>Toner</a></li>
+                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="#toner" class="nav-link" data-bs-toggle="tab"><i class="bi bi-droplet-fill"></i>Toner</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6"><i class="bi bi-box-seam-fill me-2"></i>Others</li>
                 </ul>
               </div>
@@ -81,19 +81,20 @@
             <!-- TONER MONITORING TABS -->
             <div class="tab-content">  
 
-
-              <x-tabs.employees :employees="$employees"/>
-
-
-              <x-tabs.users :users="$users"/>
-
-              <x-tabs.hardware :hardwares="$hardwares" :hardwareCategories="$hardwareCategories"/>
+              <x-tabs.hardware :hardwares="$hardwares"/>
 
               <x-tabs.software :softwares="$softwares"/>
 
+              <x-tabs.vendors />
+
+              <x-tabs.toner />
+
               <x-tabs.departments :departments="$departments"/>
 
-              <x-tabs.toner-balance :tonerBalance="$tonerBalance"/>
+              <x-tabs.employees :employees="$employees"/>
+
+              <x-tabs.users :users="$users"/>
+              
             </div> <!-- END OF TONER MONITORING TABS -->
           </div><!-- END OF MAIN SECTION-->          
 
@@ -104,7 +105,7 @@
 
             @include('modal.movementModal')
 
-            @include('modal.hardwareModal')
+            @include('modal.laptopModal')
 
             @include('modal.softwareModal')
 
@@ -115,8 +116,6 @@
             @include('modal.employeeModal')
 
             @include('modal.userModal')
-
-            @include('modal.hardwareCategoryModal')
 
         
       

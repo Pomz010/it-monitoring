@@ -1,21 +1,19 @@
 <?php
 
-namespace App\View\Components\Tabs;
+namespace App\View\Components\Forms;
 
 use Illuminate\View\Component;
 
-class Hardware extends Component
+class Input extends Component
 {
-    public $hardwares;
-    public $hardwareCategories;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($hardwares)
+    public function __construct()
     {
-        $this->hardwares = $hardwares;
+        //
     }
 
     /**
@@ -25,6 +23,6 @@ class Hardware extends Component
      */
     public function render()
     {
-        return view('components.tabs.hardware');
+        return view('components.forms.input');
     }
 }

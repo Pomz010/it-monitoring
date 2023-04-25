@@ -1,6 +1,8 @@
+@php
+  $button = ['value' => 'laptop'];
+@endphp
 <div class="container-fluid tab-pane fade" id="laptopList">
-    <button type="button" class="btn btn-primary py-1" data-bs-toggle="modal" data-bs-target="#newHardware">New Laptop</button>
-    <button type="button" class="btn btn-primary py-1" data-bs-toggle="modal" data-bs-target="#newCategory" disabled>New Category</button>
+    <x-forms.button :button="$button" />
 
     <table class="table caption-top container-xl">
       <caption class="py-1">Laptop</caption>

@@ -1,4 +1,5 @@
-<div id="tonerBalance" class="container-fluid tab-pane fade"><br>
+<div class="container-fluid tab-pane fade" id="tonerBalance">
+
     <div class="container-xxl ps-0">
       <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>New Transaction</a></button>
     </div>
@@ -56,3 +57,4 @@
       </tbody>
     </table>
   </div>
+</div>

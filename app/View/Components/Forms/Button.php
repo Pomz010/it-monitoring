@@ -1,20 +1,20 @@
 <?php
 
-namespace App\View\Components\Hardware;
+namespace App\View\Components\Forms;
 
 use Illuminate\View\Component;
 
-class Category extends Component
+class Button extends Component
 {
-    public $hardwareCategories;
+    public $button;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($hardwareCategories)
+    public function __construct($button)
     {
-        $this->hardwareCategories = $hardwareCategories;
+        $this->button = $button;
     }
 
     /**
@@ -24,6 +24,6 @@ class Category extends Component
      */
     public function render()
     {
-        return view('components.hardware.category');
+        return view('components.forms.button');
     }
 }

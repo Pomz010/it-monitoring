@@ -13,13 +13,17 @@ class HardwareController extends Controller
             'item' => 'required',
             'brand' => 'required',
             'model' => 'required',
-            'processor' => 'required',
-            'memory' => 'required',
-            'storage' => 'required',
+            'processor' => 'nullable',
+            'memory' => 'nullable',
+            'storage' => 'nullable',
             'serial_#' => 'required',
+            'imei_#1' => 'nullable',
+            'imei_#2' => 'nullable',
+            'hostname' => 'nullable',
+            'sim_#' => 'nullable',
             'purchase_date' => 'required',
             'vendor' => 'required',
-            'warranty' => 'required'
+            'warranty' => 'required',
         ]);
 
         Hardware::create($data);

@@ -42,6 +42,3 @@ Route::post('/create-software', [SoftwareController::class, 'store']);
 // Add new software routes
 Route::post('/create-toner', [TonerController::class, 'store']);
 
-// Add new hardware category routes
-Route::post('/create-hardware-category', [HardwareCategoryController::class, 'store']);
-

@@ -1,4 +1,4 @@
-<div id="transactionHistory" class="container-fluid fade tab-pane"><br>
+<div id="tonerTransactions" class="container-fluid fade tab-pane show"><br>
     <table class="table caption-top container-xl">
       <caption>Transaction History</caption>
       <thead class="table-success">
