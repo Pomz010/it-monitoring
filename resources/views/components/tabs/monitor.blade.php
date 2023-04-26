@@ -1,12 +1,14 @@
+@php
+  $button = ['value' => 'monitor'];
+@endphp
 <div class="container-fluid tab-pane fade" id="monitorList">
-    <button type="button" class="btn btn-primary py-1" data-bs-toggle="modal" data-bs-target="#newHardware">New Monitor</button>
+    <x-forms.button :button="$button" />
 
     <table class="table caption-top container-xl">
       <caption class="py-1">Monitor</caption>
       <thead class="table-success">
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Item</th>
           <th scope="col">Brand</th>
           <th scope="col">Model</th>
           <th scope="col">Asset Tag</th>
@@ -22,7 +24,6 @@
         @foreach($hardwares as $hardware)
         <tr>
           <td>{{ $hardware->id }}</td>
-          <td>{{ $hardware->item }}</td>
           <td>{{ $hardware->brand }}</td>
           <td>{{ $hardware->model }}</td>
           <td><a href="./pages/device-history" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="View complete info.">{{ $hardware->asset_tag }}</a></td>

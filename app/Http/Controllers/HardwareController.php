@@ -29,4 +29,8 @@ class HardwareController extends Controller
         Hardware::create($data);
         return back();
     }
+
+    public function showLaptop() {
+        return view('modal.hardwareModal');
+    }
 }

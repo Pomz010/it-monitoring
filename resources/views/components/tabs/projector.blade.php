@@ -1,3 +1,6 @@
+@php
+  $button = ['value' => 'printer'];
+@endphp
 <div class="container-fluid tab-pane fade" id="projectorList">
     <button type="button" class="btn btn-primary py-1" data-bs-toggle="modal" data-bs-target="#newHardware">New Projector</button>
 

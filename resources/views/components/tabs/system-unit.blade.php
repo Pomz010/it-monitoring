@@ -1,5 +1,8 @@
+@php
+  $button = ['value' => 'system unit'];
+@endphp
 <div class="container-fluid tab-pane fade" id="systemUnitList">
-    <button type="button" class="btn btn-primary py-1" data-bs-toggle="modal" data-bs-target="#newHardware">New System Unit</button>
+    <x-forms.button :button="$button" />
 
     <table class="table caption-top container-xl">
       <caption class="py-1">System Unit</caption>

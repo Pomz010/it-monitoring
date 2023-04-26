@@ -1,7 +1,7 @@
 @php
   $button = ['value' => 'laptop'];
 @endphp
-<div class="container-fluid tab-pane fade" id="laptopList">
+<div class="container-fluid tab-pane fade active show" id="laptopList">
     <x-forms.button :button="$button" />
 
     <table class="table caption-top container-xl">

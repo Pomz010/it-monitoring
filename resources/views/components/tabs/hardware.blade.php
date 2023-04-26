@@ -1,8 +1,9 @@
 
 <div id="hardware" class="container-xl tab-pane fade"><br>
-  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item d-flex" role="presentation">
-        <button class="nav-link mx-1" id="pills-laptop-tab" data-bs-toggle="tab" data-bs-target="#laptopList" type="button" role="tab" aria-controls="pills-laptop" aria-selected="false">Laptop</button>
+  <ul class="nav nav-tabs mb-3" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link mx-1 active" aria-current="page" href="#">Laptop</a>
+        <!-- <button class="nav-link mx-1 active" id="pills-laptop-tab" data-bs-toggle="tab" data-bs-target="#laptopList" type="button" role="tab" aria-controls="pills-laptop" aria-selected="true">Laptop</button>
         <button class="nav-link mx-1" id="pills-systemUnit-tab" data-bs-toggle="tab" data-bs-target="#systemUnitList" type="button" role="tab" aria-controls="pills-systemUnit" aria-selected="false">System Unit</button>
         <button class="nav-link mx-1" id="pills-monitor-tab" data-bs-toggle="tab" data-bs-target="#monitorList" type="button" role="tab" aria-controls="pills-monitor" aria-selected="false">Monitor</button>
         <button class="nav-link mx-1" id="pills-printer-tab" data-bs-toggle="tab" data-bs-target="#printerList" type="button" role="tab" aria-controls="pills-printer" aria-selected="false">Printer</button>
@@ -12,7 +13,7 @@
         <button class="nav-link mx-1" id="pills-firewall-tab" data-bs-toggle="tab" data-bs-target="#firewallList" type="button" role="tab" aria-controls="pills-firewall" aria-selected="false">Firewall</button>
         <button class="nav-link mx-1" id="pills-switch-tab" data-bs-toggle="tab" data-bs-target="#switchList" type="button" role="tab" aria-controls="pills-switch" aria-selected="false">Switch</button>
         <button class="nav-link mx-1" id="pills-accessPoint-tab" data-bs-toggle="tab" data-bs-target="#accessPointList" type="button" role="tab" aria-controls="pills-accessPoint" aria-selected="false">Access Point</button>
-        <button class="nav-link mx-1" id="pills-mobileDevice-tab" data-bs-toggle="tab" data-bs-target="#mobileDeviceList" type="button" role="tab" aria-controls="pills-mobileDevice" aria-selected="false">Mobile Device</button>
+        <button class="nav-link mx-1" id="pills-mobileDevice-tab" data-bs-toggle="tab" data-bs-target="#mobileDeviceList" type="button" role="tab" aria-controls="pills-mobileDevice" aria-selected="false">Mobile Device</button> -->
       </li>
   </ul>
 

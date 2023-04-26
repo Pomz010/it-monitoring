@@ -105,7 +105,7 @@
 
             @include('modal.movementModal')
 
-            @include('modal.laptopModal')
+            @include('modal.hardwareModal')
 
             @include('modal.softwareModal')
 

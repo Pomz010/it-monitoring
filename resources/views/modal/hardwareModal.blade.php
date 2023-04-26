@@ -1,5 +1,10 @@
-
-    <div class="modal fade" data-bs-backdrop="static" id="newLaptop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+@php
+    $display = '';
+    if(true) {
+        $display = 'd-none';
+    }
+@endphp
+    <div class="modal fade" data-bs-backdrop="static" id="newHardware" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header py-1">
@@ -16,8 +21,6 @@
                             <input class="w-50" type="text" id="asset_tag" name="asset_tag">
                         </div>
 
-                        
-
                         <div class="mb-2 d-flex justify-content-between">
                             <label for="brand">Brand: </label>
                             <input class="w-50" type="text" id="brand" name="brand">
@@ -28,17 +31,17 @@
                             <input class="w-50" type="text" id="model" name="model">
                         </div>
 
-                        <div class="mb-2 d-flex justify-content-between">
+                        <div class="mb-2 d-flex justify-content-between {{ $display }}">
                             <label for="processor">Processor: </label>
                             <input class="w-50" type="text" id="processor" name="processor">
                         </div>
 
-                        <div class="mb-2 d-flex justify-content-between">
+                        <div class="mb-2 d-flex justify-content-between {{ $display }}">
                             <label for="memory">Memory: </label>
                             <input class="w-50" type="text" id="memory" name="memory">
                         </div>
 
-                        <div class="mb-2 d-flex justify-content-between">
+                        <div class="mb-2 d-flex justify-content-between {{ $display }}">
                             <label for="storage">Storage: </label>
                             <input class="w-50" type="text" id="storage" name="storage">
                         </div>
@@ -48,22 +51,22 @@
                             <input class="w-50" type="text" id="serial_#" name="serial_#">
                         </div>
 
-                        <div class="mb-2 d-flex justify-content-between">
+                        <div class="mb-2 d-flex justify-content-between {{ $display }}">
                             <label for="imei_#1">IMEI #1: </label>
                             <input class="w-50" type="text" id="imei_#1" name="imei_#1">
                         </div>
 
-                        <div class="mb-2 d-flex justify-content-between">
+                        <div class="mb-2 d-flex justify-content-between {{ $display }}">
                             <label for="imei_#2">IMEI #2: </label>
                             <input class="w-50" type="text" id="imei_#2" name="imei_#2">
                         </div>
 
-                        <div class="mb-2 d-flex justify-content-between">
+                        <div class="mb-2 d-flex justify-content-between {{ $display }}">
                             <label for="hostname">Hostname: </label>
                             <input class="w-50" type="text" id="hostname" name="hostname">
                         </div>
 
-                        <div class="mb-2 d-flex justify-content-between">
+                        <div class="mb-2 d-flex justify-content-between {{ $display }}">
                             <label for="sim_#">Sim #: </label>
                             <input class="w-50" type="text" id="sim_#" name="sim_#">
                         </div>

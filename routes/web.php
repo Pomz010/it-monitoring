@@ -42,3 +42,6 @@ Route::post('/create-software', [SoftwareController::class, 'store']);
 // Add new software routes
 Route::post('/create-toner', [TonerController::class, 'store']);
 
+// Display Laptop Modal Form
+Route::get('/create-laptop', [HardwareController::class, 'showLaptop'])->name('showLaptop');
+

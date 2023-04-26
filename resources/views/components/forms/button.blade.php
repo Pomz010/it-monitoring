@@ -1,12 +1,3 @@
-@switch($button)
-    @case('laptop')
-        <button type="button" class="btn btn-primary py-1" data-bs-toggle="modal" data-bs-target="#newLaptop">New Laptop</button>
-        @break
- 
-    @case(2)
-        Second case...
-        @break
- 
-    @default
-        Default case...
-@endswitch
+
+
+<a class="btn btn-primary" href="{{ route('showLaptop') }}" role="button" data-bs-toggle="modal" data-bs-target="#newHardware">New {{ ucfirst($button['value']) }}</a>
