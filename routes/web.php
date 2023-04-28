@@ -32,6 +32,7 @@ Route::post('/create-employee', [EmployeeController::class, 'store']);
 
 // Add new hardware routes
 Route::post('/create-hardware', [HardwareController::class, 'store']);
+Route::get('/hardware-assets', [HardwareController::class, 'showHardware'])->name('hardwareAssets');
 
 // Add new department routes
 Route::post('/create-department', [DepartmentController::class, 'store']);

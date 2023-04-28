@@ -1,4 +1,4 @@
-<x-layout>
+@include('partials._header')
     <div class="container">
         <div class="form_login container w-auto position-absolute top-50 start-50 translate-middle">
             <div class="login-form__container">
@@ -33,4 +33,4 @@
             </div>
         </div>
     </div>
-</x-layout>
+@include('partials._footer')

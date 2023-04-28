@@ -1,9 +1,10 @@
-@php
-    $display = '';
-    if(true) {
-        $display = 'd-none';
-    }
-@endphp
+<x-slot name="tabContent">
+    @php
+        $display = '';
+        if(true) {
+            $display = 'd-none';
+        }
+    @endphp
     <div class="modal fade" data-bs-backdrop="static" id="newHardware" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
         <div class="modal-content">
@@ -104,3 +105,4 @@
         </div>
         </div>
     </div>
+</x-slot>

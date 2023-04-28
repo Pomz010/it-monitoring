@@ -31,6 +31,12 @@ class HardwareController extends Controller
     }
 
     public function showLaptop() {
-        return view('modal.hardwareModal');
+        return view('components.tabs.laptops', ['button' => 'laptop']);
+    }
+
+    public function showHardware(){
+        $hardware = new Hardware;
+        $hardwares = $hardware->getAllHardware();
+        return view('components.homepage', ['tabs' => 'hardware', 'hardwares' => $hardwares]);
     }
 }
